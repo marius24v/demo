@@ -1,7 +1,7 @@
 ## Steps for EKS:
 
 
-# Prerequisites:
+### Prerequisites:
 
 EKS cluster with AWS Load Balancer Controller addon, Cert Manager.
 
@@ -9,19 +9,19 @@ AWS Load Balancer Controller addon chart, repo https://aws.github.io/eks-charts 
 Cert Manager chart, repo https://charts.jetstack.io, chart is "cert-manager".
 
 
-# Create namespace:
+### Create namespace:
 
 ```
 kubectl apply -f namespace.yaml
 ```
 
-# Install the helm chart:
+### Install the helm chart:
 
 ```
 helm install -n webapp-namespace webapp helmchart/webapp -f helmchart/webapp/values.yaml
 ```
 
-# Install the ingress:
+### Install the ingress:
 
 ```
 kubectl apply -f ingress.yaml
