@@ -1,5 +1,11 @@
 ### Demo for webapp
 
+About
+
+Small web app that displays the visitor IP in reverse.
+
+
+
 ## Docker steps:
 
 Build image:
@@ -22,3 +28,4 @@ helm install webapp-chart helmchart/webapp/ --values helmchart/webapp/values.yam
 
 ## Github actions::
 
+There is one action that will build the Docker container image and push it as Github package
